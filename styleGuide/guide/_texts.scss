@@ -1,0 +1,89 @@
+h1, h2, h3, h4, h5, h6 {
+  color: $text-color-lighter;
+  font-weight: $bold;
+  font-family: 'Noto Serif', serif;
+
+  & + p {
+    margin-top: 15px;
+  }
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: $boldest;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: $boldest;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: $boldest;
+}
+
+h4 {
+  font-size: 22px;
+  font-weight: $boldest;
+}
+
+h5 {
+  font-size: 18px;
+  color: $text-color;
+}
+
+h6 {
+  font-size: 15px;
+  color: $text-color;
+
+  .fa {
+    color: $text-color-lighter;
+    margin-right: 5px;
+  }
+}
+
+time {
+  color: $gray-dark;
+}
+
+label, .label {
+  font-size: 14px;
+  color: $text-color-light;
+  font-weight: $bolder;
+}
+
+form {
+  label {
+    font-size: 14px;
+    font-weight: $bolder;
+  }
+}
+
+p {
+  @include font-line(14px);
+
+  &.secondary {
+    color: $text-color-light;
+  }
+
+  &.error {
+    font-size  : 12px;
+    color      : $danger-color;
+    font-style : italic;
+    margin: 5px 0 0 5px;
+  }
+
+  &.wide {
+    width: 250px;
+  }
+
+  &.wider {
+    width: 500px;
+  }
+}
+
+strong {
+  font-weight: $bolder;
+}

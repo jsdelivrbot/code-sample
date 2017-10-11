@@ -1,0 +1,123 @@
+a.button, button {
+  border-radius: 20px;
+  border: 1px solid $primary-color;
+  padding: 8px 20px;
+  font-size: 14px;
+  line-height: 14px;
+  cursor: pointer;
+  font-weight: $normal;
+  display: inline-block;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  &:hover {
+    background-color: $primary-color;
+    color: $white;
+  }
+
+  &.action {
+    background-color: $primary-color;
+    color: $white;
+
+    &:hover {
+      background-color: $primary-color-dark;
+    }
+
+    &:disabled {
+      background-color: $primary-color-light;
+    }
+  }
+
+  &.success {
+    background-color: $success-color;
+    color           : $white;
+    border          : none;
+    margin          : 1px; /* compensate for border none */
+
+    &:hover {
+      background-color: $success-color-dark;
+    }
+
+    &:disabled {
+      background-color: #B6C194;
+    }
+  }
+
+  &.danger {
+    background-color: $danger-color;
+    color           : white;
+    border          : none;
+    margin          : 1px; /* compensate for border none */
+
+    &:hover {
+      background-color: #802511;
+    }
+
+    &:disabled {
+      background-color: #DEA295;
+    }
+  }
+
+  &.info {
+    background-color: $warning-color-light;
+    color: $white;
+    border          : none;
+    margin          : 1px; /* compensate for border none */
+
+    &:hover {
+      background-color: $warning-color;
+    }
+
+    &:disabled {
+      background-color: $warning-color-lighter;
+    }
+  }
+
+  &.hollow {
+    background-color: transparent;
+    color: $text-color;
+    border-color: $text-color;
+
+    &:hover {
+      background-color: $grey-lightest;
+      color: $text-color-darkest;
+    }
+  }
+
+  &.clean {
+    background-color: transparent;
+    border-radius   : 0;
+    border          : none;
+    padding         : 0;
+    margin          : 0;
+    font-size       : inherit;
+    font            : inherit;
+    line-height     : inherit;
+    font-weight     : inherit;
+    text-transform  : inherit;
+
+    &.shy {
+      color: $primary-color-light;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+
+    &:hover {
+      color: $primary-color-dark;
+    }
+
+    &.light {
+      color: $white;
+
+      &:hover {
+        color: $primary-color-darkest;
+      }
+    }
+  }
+}

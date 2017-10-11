@@ -1,0 +1,129 @@
+@import "guide/includes";
+@import "guide/buttons";
+@import "guide/forms";
+@import "guide/texts";
+@import "guide/icons";
+
+html {
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+main, header, footer { /* ie dosnt support these tags */
+  display: block;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  font-family: 'Fira Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-text-stroke: 1px transparent;
+  background-color: $grey-lighter;
+  font-size: 15px;
+  font-weight: 400;
+  color: $text-color-dark;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  letter-spacing: 0.5px;
+}
+
+hr {
+  height: 2px;
+  border: none;
+  background-color: $grey-lightest;
+  margin: 0;
+}
+
+a {
+  cursor: pointer;
+  color: $primary-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $primary-color-dark;
+
+    label {
+      color: $primary-color-dark;
+    }
+  }
+
+  &.shy {
+    color: $primary-color-light;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  .fa {
+    margin-right: 5px;
+  }
+
+  &.light {
+    color: $white;
+
+    &:hover {
+      color: $primary-color-darkest;
+    }
+  }
+
+  &.dark {
+    color: $primary-color-dark;
+
+    &:hover {
+      color: $primary-color-darkest;
+    }
+  }
+
+  label {
+    cursor: pointer;
+  }
+}
+
+button {
+  .fa {
+    &:first-child {
+      margin-right: 5px;
+    }
+
+    &:last-child {
+      margin-left: 5px;
+    }
+  }
+}
+
+.elevated-bottom {
+  border-bottom: 1px solid $grey-light;
+}
+
+.elevated {
+  @include elevated;
+}
+
+.none {
+  display: none;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.relative {
+  position: relative;
+}
+
+.transition {
+  // @include transition (all 0.2s ease-in-out);
+}
+
+.fa-check {
+  color: $success-color;
+}

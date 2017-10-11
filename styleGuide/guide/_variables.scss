@@ -1,0 +1,140 @@
+$max-width: 960px;
+$max-width-small: 356px;
+
+$shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+
+$round: 4px;
+$rounder: 6px;
+
+$light : 300;
+$normal: 300;
+$bold  : 400;
+$bolder: 500;
+$boldest: 700;
+$font-family: 'Fira Sans', sans-serif;
+
+$primary-color-base   : #007bff !default;
+
+$primary-color-darkest : #9C3800;
+$primary-color-darker  : #00448B;
+$primary-color-dark    : #0059B6;
+$primary-color         : $primary-color-base;
+$primary-color-light   : #1085FF;
+$primary-color-lighter : #3A99FC;
+$primary-color-lightest: #FFA06B;
+
+$secondary_color-base   : #0AA379 !default;
+
+$secondary_color-darkest : #00664A;
+$secondary_color-darker  : #00664A;
+$secondary_color-dark    : #01825E;
+$secondary_color         : $secondary_color-base;
+$secondary_color-light   : #2CAA87;
+$secondary_color-lighter : #50BEA0;
+$secondary_color-lightest: #50BEA0;
+
+$success-color-base   : #04af04 !default;
+$success-color-darker : darken($success-color-base, 15%);
+$success-color-dark   : darken($success-color-base, 10%);
+$success-color        : $success-color-base;
+$success-color-light  : lighten($success-color-base, 10%);
+$success-color-lighter: lighten($success-color-base, 15%);
+
+$warning-color-base   : #eed658 !default;
+$warning-color-darkest : darken($warning-color-base, 33%);
+$warning-color-darker : darken($warning-color-base, 25%);
+$warning-color-dark   : darken($warning-color-base, 15%);
+$warning-color        : $warning-color-base;
+$warning-color-light  : lighten($warning-color-base, 15%);
+$warning-color-lighter: lighten($warning-color-base, 25%);
+$warning-color-lightest: lighten($warning-color-base, 32%);
+
+$danger-color-base   : #ff0066 !default;
+$danger-color-darker : darken($danger-color-base, 25%);
+$danger-color-dark   : darken($danger-color-base, 15%);
+$danger-color        : darken($danger-color-base, 5%);
+$danger-color-light  : lighten($danger-color-base, 15%);
+$danger-color-lighter: lighten($danger-color-base, 25%);
+
+$gray-base    : #e8e8e8 !default;
+$gray-darkest : darken($gray-base, 20%);
+$gray-darker  : darken($gray-base, 15%);
+$gray-dark    : darken($gray-base, 5%);
+$gray         : $gray-base;
+$gray-light   : #e8e8e8;
+$gray-lighter : #efefef;
+$gray-lightest: lighten($gray-lighter, 2.5%);
+
+$grey-base   : $gray-base;
+$grey-darkest: $gray-darkest;
+$grey-darker : $gray-darker;
+$grey-dark   : $gray-dark;
+$grey        : $gray;
+$grey-light  : $gray-light;
+$grey-lighter: $gray-lighter;
+$grey-lightest: $gray-lightest;
+
+$white: #FFF;
+$black: #424242;
+$red: #e64a27;
+
+$text-color-base   : #4a4a4a;
+$text-color-darkest: darken($text-color-base, 20%);
+$text-color-darker : darken($text-color-base, 10%);
+$text-color-dark   : $text-color-base;
+$text-color        : lighten($text-color-base, 10%);
+$text-color-light  : lighten($text-color-base, 20%);
+$text-color-lighter: lighten($text-color-base, 40%);
+$text-color-lightest: lighten($text-color-base, 60%);
+
+$link-dark-color      : $primary-color !default;
+$link-dark-hover-color: #0096ff;
+
+$link-light-color      : $gray !default;
+$link-light-hover-color: darken($link-light-color, 15%) !default;
+
+$btn-default-color : #333 !default;
+$btn-default-bg    : #fff !default;
+$btn-default-border: #ccc !default;
+
+$btn-primary-color : #fff !default;
+$btn-primary-bg    : $primary-color !default;
+$btn-primary-border: $primary-color !default;
+
+$btn-secondary-color : $primary-color !default;
+$btn-secondary-bg    : #fff !default;
+$btn-secondary-border: $primary-color !default;
+
+$btn-success-color : #fff !default;
+$btn-success-bg    : $success-color !default;
+$btn-success-border: darken($btn-success-bg, 5%) !default;
+
+$btn-warning-color : #fff !default;
+$btn-warning-bg    : $warning-color !default;
+$btn-warning-border: darken($btn-warning-bg, 5%) !default;
+
+$btn-danger-color : #fff !default;
+$btn-danger-bg    : $danger-color !default;
+$btn-danger-border: darken($btn-danger-bg, 5%) !default;
+
+$input-bg               : #fff !default;
+$input-disabled-bg      : $gray-lighter !default;
+$input-color            : $text-color !default;
+$input-border           : #ccc !default;
+$input-border-focus     : #66afe9 !default;
+$input-color-placeholder: $text-color-lighter !default;
+
+$label-default-bg      : $gray-light !default;
+$label-primary-bg      : $primary-color !default;
+$label-success-bg      : $success-color !default;
+$label-warning-bg      : $warning-color !default;
+$label-danger-bg       : $danger-color !default;
+$label-color           : #fff !default;
+$label-link-hover-color: #fff !default;
+
+$vendor-facebook: black;
+$vendor-google: black;
+$vendor-github: black;
+$vendor-twitter: black;
+$vendor-dribbble: black;
+$vendor-linkedin: black;

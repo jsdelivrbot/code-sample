@@ -1,0 +1,16 @@
+@mixin font-line($pt) {
+  font-size  : $pt;
+  line-height: $pt * 1.38;
+}
+
+@mixin elevated() {
+  box-shadow: 0 0px 3px 0px #686868;
+}
+
+@mixin exclude-first($property: margin-top, $value: 10px, $first-value: 0px) {
+  #{$property}: $value;
+
+  &:first-child {
+    #{$property}: $first-value;
+  }
+}
