@@ -1,0 +1,7 @@
+{
+  "extends": ["standard", "standard-react"],
+  "globals": {},
+  "rules": {
+    "comma-dangle": [2, "always-multiline"]
+  }
+}

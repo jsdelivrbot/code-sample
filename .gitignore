@@ -1,0 +1,12 @@
+.tmp
+node_modules
+.sass-cache
+.env
+npm-debug.log
+.DS_Store
+dist.zip
+coverage
+.idea
+reports
+screens
+dist
