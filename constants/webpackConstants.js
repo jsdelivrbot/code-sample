@@ -1,0 +1,5 @@
+export const HTML_INDEX_PATH = './index.html'
+export const TEST_HTML_INDEX_PATH = './testIndex.html'
+export const TEST_INDEX_PATH = './testIndex.js'
+export const INDEX_PATH = './index.js'
+export const EXAMPLES_INDEX_PATH = './examples.js'
