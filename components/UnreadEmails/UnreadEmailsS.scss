@@ -1,0 +1,30 @@
+@import "guide/includes";
+
+.UnreadEmails {
+  min-height: 100px;
+  text-align: center;
+
+  .NoItems, > ul > li {
+    max-width: $max-width-small;
+    margin: 0 auto;
+  }
+
+  > .Loader {
+    position: initial;
+    display: inline-block;
+    margin: 25px auto;
+  }
+
+  .UnreadEmailCard {
+    box-shadow: $shadow;
+  }
+
+  .transitionSpacingHack {
+    height: 20px;
+  }
+
+  .NoItems {
+    box-shadow: $shadow;
+    margin: 25px auto 0px auto;
+  }
+}

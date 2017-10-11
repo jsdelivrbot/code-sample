@@ -1,8 +1,8 @@
 import './UnreadEmailsS.scss'
 import React from 'react'
 import { array, bool, func } from 'prop-types'
-import UnreadEmailsCardFormC from 'components/UnreadEmailsCardForm/UnreadEmailsCardFormC'
-import UnreadEmailsCardTransitionC from 'components/UnreadEmailsCardTransition/UnreadEmailsCardTransitionC'
+import UnreadEmailCardC from 'components/UnreadEmailCard/UnreadEmailCardC'
+import UnreadEmailCardTransitionC from 'components/UnreadEmailCardTransition/UnreadEmailCardTransitionC'
 import TransitionGroup from 'react-transition-group/TransitionGroup'
 import Waypoint from 'react-waypoint'
 import { PAGE_SIZE } from 'constants/componentConstants'
@@ -36,11 +36,11 @@ const UnreadEmails = ({
             }
 
             return (
-              <UnreadEmailsCardTransitionC key={id} id={id}>
+              <UnreadEmailCardTransitionC key={id} id={id}>
                 <li>
                   <div className='transitionSpacingHack' />
 
-                  <UnreadEmailsCardFormC id={id} />
+                  <UnreadEmailCardC id={id} />
 
                   { (isPageEnd || isLastItem) &&
                     <Waypoint
@@ -49,7 +49,7 @@ const UnreadEmails = ({
                     />
                   }
                 </li>
-              </UnreadEmailsCardTransitionC>
+              </UnreadEmailCardTransitionC>
             )
           })
         }

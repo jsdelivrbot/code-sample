@@ -25,15 +25,11 @@ function onRouteUpdate () {
 
 const AppRouter = function ({ store }) {
   const syncedHistory = syncHistoryWithStore(getHistory(), store)
-  const home = function () { return <div>Home</div> }
 
   return (
     <Provider store={store}>
       <Router onUpdate={onRouteUpdate} history={syncedHistory}>
-        <Route path={ROOT_PATH} component={AppC}>
-          <IndexRoute component={home} />
-        </Route>
-
+        <Route path={ROOT_PATH} component={AppC} />
         <Route path='*' component={Error404} />
       </Router>
     </Provider>
