@@ -5,6 +5,7 @@ import React from 'react'
 import { object, bool } from 'prop-types'
 import Loader from 'components/Loader/Loader'
 import UnreadEmailsC from 'components/UnreadEmails/UnreadEmailsC'
+import ReadEmailsC from 'components/ReadEmails/ReadEmailsC'
 
 const App = ({
   children = {},
@@ -21,6 +22,8 @@ const App = ({
       { !showLoader &&
         <main>
           <UnreadEmailsC />
+
+          <ReadEmailsC />
         </main>
       }
     </div>

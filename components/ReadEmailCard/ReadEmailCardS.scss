@@ -1,0 +1,57 @@
+@import "guide/includes";
+
+.ReadEmailCard {
+  position: relative;
+  background-color: $white;
+  padding: 15px 10px;
+
+  > header {
+    display: flex;
+    justify-content: space-between;
+
+    .subject {
+      font-weight: $bolder;
+    }
+
+    .date {
+      margin-top: 10px;
+      color: $primary-color-light;
+    }
+  }
+
+  > main {
+    margin-top: 10px;
+    border-top: 1px solid $grey;
+    padding-top: 10px;
+
+    .body {
+      $font-size: 14px;
+      $line-height: 1.4;
+      $lines-to-show: 2;
+
+      display: block; /* Fallback for non-webkit */
+      display: -webkit-box;
+      height: $font-size*$line-height*$lines-to-show; /* Fallback for non-webkit */
+      font-size: $font-size;
+      line-height: $line-height;
+      -webkit-line-clamp: $lines-to-show;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  > footer {
+    margin-top: 10px;
+    border-top: 1px solid $grey;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .subject {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 16px;
+  }
+}

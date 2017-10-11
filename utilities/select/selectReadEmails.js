@@ -20,14 +20,14 @@ const transformer = ({
   items,
 }) => {
   const filters = {
-    unread: true,
+    unread: false,
   }
 
   const unreadEmails = filterItems({ items, filters })
-  const sortedUnreadEmails = sortBy(unreadEmails, ['date'])
-  const reversedUnreadEmails = reverse(sortedUnreadEmails)
+  const sortedReadEmails = sortBy(unreadEmails, ['date'])
+  const reversedReadEmails = reverse(sortedReadEmails)
 
-  const unreadEmailIds = reversedUnreadEmails.map(({ data }) => {
+  const unreadEmailIds = reversedReadEmails.map(({ data }) => {
     const [id] = getMany(data, ['id'])
 
     return id
@@ -36,6 +36,6 @@ const transformer = ({
   return unreadEmailIds
 }
 
-const selectUnreadEmails = createSelector([getStates], transformer)
+const selectReadEmails = createSelector([getStates], transformer)
 
-export default selectUnreadEmails
+export default selectReadEmails

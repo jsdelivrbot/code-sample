@@ -1,0 +1,42 @@
+@import "guide/includes";
+
+.ReadEmails {
+  min-height: 100px;
+
+  > header {
+    text-transform: uppercase;
+    padding: 10px 20px;
+    color: $primary-color-lighter;
+  }
+
+  > ul {
+    overflow: scroll;
+    background-color: $grey-dark;
+    display: flex;
+    padding: 20px 0px;
+
+    > li {
+      display: flex;
+      align-items: start;
+    }
+  }
+
+  > .Loader {
+    position: initial;
+    display: inline-block;
+    margin: 25px auto;
+  }
+
+  .UnreadEmailCard {
+    width: 300px;
+  }
+
+  .transitionSpacingHack {
+    width: 20px;
+    height: 20px;
+  }
+
+  .NoItems {
+    margin: 25px auto 0px auto;
+  }
+}
