@@ -1,4 +1,8 @@
-import {} from 'constants/urlConstants'
+import getEmailsO from 'orchestration/get/getEmailsO'
+
+import {
+  EMAILS_URL,
+} from 'constants/urlConstants'
 
 const ORCHESTRATION_MAP = {
   post: {
@@ -6,6 +10,7 @@ const ORCHESTRATION_MAP = {
   put: {
   },
   get: {
+    [EMAILS_URL]: getEmailsO,
   },
   patch: {},
   delete: {
