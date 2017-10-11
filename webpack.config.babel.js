@@ -20,7 +20,7 @@ if (isPort > -1) {
 const configs = (env) => {
   const { currentEnvironment } = getFlags({ env })
   const dirname = __dirname
-  const publicPath = currentEnvironment === PROD ? '/v2/' : '/'
+  const publicPath = '/'
   const context = path.resolve(__dirname, '')
   const module = getModule({ dirname, currentEnvironment, publicPath })
   const resolve = getResolve({ path, dirname, currentEnvironment })
