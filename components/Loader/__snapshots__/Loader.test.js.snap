@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test LoaderE should be able to render the component 1`] = `
+<div
+  className="LoaderE"
+>
+  <h1
+    className="exampleHeader"
+  >
+    Default
+  </h1>
+  <div
+    className="Loader"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="loader"
+      />
+    </div>
+  </div>
+</div>
+`;

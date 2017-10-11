@@ -1,0 +1,70 @@
+@import "guide/includes";
+
+.Loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+
+  &.small {
+    margin-top: -40px;
+    margin-left: -40px;
+
+    .loader {
+      width: 30px;
+      height: 30px;
+      border-top: 6px solid $grey-darker;
+      border-right: 6px solid $grey-darker;
+      border-bottom: 6px solid $grey-darker;
+      border-left: 6px solid $grey;
+    }
+  }
+
+  &.smallest {
+    margin-top: -35px;
+    margin-left: -35px;
+
+    .loader {
+      width: 20px;
+      height: 20px;
+      border-top: 4px solid $grey-darker;
+      border-right: 4px solid $grey-darker;
+      border-bottom: 4px solid $grey-darker;
+      border-left: 4px solid $grey;
+    }
+  }
+
+  .container {
+    padding: 25px;
+    opacity: .98;
+    border-radius: 10px;
+  }
+
+  .loader {
+    @keyframes load8 {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    animation: load8 .8s infinite linear;
+    width: 50px;
+    height: 50px;
+    border-top: 10px solid $grey-dark;
+    border-right: 10px solid $grey-dark;
+    border-bottom: 10px solid $grey-dark;
+    border-left: 10px solid $grey;
+  }
+
+  .loader,
+  .loader:after {
+    border-radius: 50%;
+  }
+}
