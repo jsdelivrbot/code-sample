@@ -1,0 +1,30 @@
+{
+  "plugins": [
+    "add-module-exports",
+    "transform-object-rest-spread",
+    ["module-resolver", {
+      "root": ["./"],
+      "alias": {
+        "configs": "./configs/testing",
+        "utilities": "./utilities",
+        "constants": "./constants",
+        "orchestration": "./orchestration",
+        "apis": "./apis",
+        "stateLayer": "./stateLayer",
+        "components": "./components",
+        "test-helpers": "./test-helpers",
+        "e2e": "./e2e",
+        "styleGuide": "./styleGuide",
+        "cases": "./e2e/tests/cases"
+      }
+    }]
+  ],
+  "presets": [
+    "es2015", "react", "stage-2"
+  ],
+  "env": {
+    "testSingle": {
+      "plugins": [ "istanbul" ]
+    }
+  }
+}
