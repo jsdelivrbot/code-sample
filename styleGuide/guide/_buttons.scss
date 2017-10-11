@@ -1,5 +1,5 @@
 a.button, button {
-  border-radius: 20px;
+  border-radius: 6px;
   border: 1px solid $primary-color;
   padding: 8px 20px;
   font-size: 14px;
@@ -8,7 +8,7 @@ a.button, button {
   font-weight: $normal;
   display: inline-block;
   letter-spacing: 1px;
-  text-transform: lowercase;
+  text-transform: capitalize;
 
   &:disabled {
     cursor: not-allowed;

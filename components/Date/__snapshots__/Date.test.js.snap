@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test DateE should be able to render the component 1`] = `
+<div
+  className="DateE"
+>
+  <h1
+    className="exampleHeader"
+  >
+    default
+  </h1>
+  <span
+    className="Date"
+  >
+    12/31/1969
+  </span>
+  <h1
+    className="exampleHeader"
+  >
+    2017-03-10T21:21:00.000Z
+  </h1>
+  <span
+    className="Date"
+  >
+    03/09/2017
+  </span>
+</div>
+`;

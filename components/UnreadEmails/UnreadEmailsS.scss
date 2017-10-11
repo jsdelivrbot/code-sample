@@ -2,11 +2,15 @@
 
 .UnreadEmails {
   min-height: 100px;
-  text-align: center;
+  overflow: scroll;
 
-  .NoItems, > ul > li {
-    max-width: $max-width-small;
-    margin: 0 auto;
+  > ul {
+    display: flex;
+
+    > li {
+      display: flex;
+      align-items: start;
+    }
   }
 
   > .Loader {
@@ -17,9 +21,11 @@
 
   .UnreadEmailCard {
     box-shadow: $shadow;
+    width: 300px;
   }
 
   .transitionSpacingHack {
+    width: 20px;
     height: 20px;
   }
 
