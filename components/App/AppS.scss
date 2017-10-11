@@ -7,23 +7,11 @@
   align-items: stretch;
   position: relative;
 
-  .wallPaper {
-    position: fixed;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    z-index: -1;
-
-    img {
-      position: fixed;
-      top: 0;
-      left: 0;
-
-      /* Preserve aspet ratio */
-      min-width: 100%;
-      min-height: 100%;
-    }
+  > header {
+    background-color: $primary-color;
+    color: $white;
+    text-align: center;
+    padding: 20px 10px; 
   }
 
   > main {
@@ -33,25 +21,10 @@
     flex-grow: 1;
   }
 
-  > .footerLinks {
-    margin-bottom: 10px;
-
-    li {
-      margin: 10px;
-    }
-  }
-
-  .kep-login-facebook {
-    margin: 30px;
-  }
 
   @media only screen and (max-width: 500px) {
     > main {
       padding: 15px;
-    }
-
-    > .footerLinks {
-      margin-bottom: 0px;
     }
   }
 }
