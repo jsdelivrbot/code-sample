@@ -16,6 +16,8 @@ const UnreadEmails = ({
 }) => {
   return (
     <div className='UnreadEmails'>
+      <header>Unread Emails</header>
+
       { showNoItems &&
         <NoItems />
       }
