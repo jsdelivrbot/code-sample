@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test NoItemsE should be able to render the component 1`] = `
+<div
+  className="NoItemsE"
+>
+  <h1
+    className="exampleHeader"
+  >
+    Default
+  </h1>
+  <p
+    className="NoItems"
+  >
+    There are no items available.
+  </p>
+</div>
+`;
