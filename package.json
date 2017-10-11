@@ -1,5 +1,5 @@
 {
-  "name": "code sample",
+  "name": "code-sample",
   "version": "0.0.1",
   "main": "./index.js",
   "scripts": {
@@ -12,7 +12,7 @@
     "test": "jest",
     "testServer": "webpack-dev-server --env testing --hot --inline -d --colors --port 9002",
     "build": "rm -r dist; webpack --env prod -p --bail --progress",
-    "lint": "eslint ./src",
+    "lint": "eslint ./src"
   },
   "jest": {
     "moduleNameMapper": {
