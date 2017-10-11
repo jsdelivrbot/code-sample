@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test App should be able to render the default component 1`] = `
+<div
+  className="AppE"
+>
+  <h1
+    className="exampleHeader"
+  >
+    Default
+  </h1>
+  <div
+    className="App"
+  >
+    <div
+      className="wallPaper"
+    >
+      <img
+        srcSet="test-file-stub 1744w, test-file-stub 423w"
+      />
+    </div>
+    <div
+      className="Loader"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="loader"
+        />
+      </div>
+    </div>
+  </div>
+  <h1
+    className="exampleHeader"
+  >
+    isLoggedIn
+  </h1>
+  <div
+    className="App"
+  >
+    <div
+      className="wallPaper"
+    >
+      <img
+        srcSet="test-file-stub 1744w, test-file-stub 423w"
+      />
+    </div>
+    <header
+      className="SiteHeader flex column"
+    >
+      <nav>
+        <ul
+          className="flex middle"
+        >
+          <li
+            className=""
+          >
+            <a
+              onClick={[Function]}
+              style={Object {}}
+            >
+              Suggestions
+            </a>
+          </li>
+          <li
+            className=""
+          >
+            <a
+              onClick={[Function]}
+              style={Object {}}
+            >
+              Symbols
+            </a>
+          </li>
+          <li
+            className=""
+          >
+            <a
+              onClick={[Function]}
+              style={Object {}}
+            >
+              Notes
+            </a>
+          </li>
+          <li
+            className=""
+          >
+            <a
+              onClick={[Function]}
+              style={Object {}}
+            >
+              Tasks
+            </a>
+          </li>
+          <li
+            className=""
+          >
+            <a
+              onClick={[Function]}
+              style={Object {}}
+            >
+              Reports
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div
+      className="SecondaryNav flex column"
+    />
+    <main>
+      <div>
+        children
+      </div>
+    </main>
+  </div>
+</div>
+`;
