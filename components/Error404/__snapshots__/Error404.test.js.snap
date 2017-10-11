@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Error404 should be able to render the component 1`] = `
+<div
+  className="Error404"
+>
+  <h3>
+    Oops, the page you're looking for doesn't exist.
+  </h3>
+  <div
+    className="FunLoader"
+  >
+    <span
+      className="fa fa-grav"
+    />
+  </div>
+</div>
+`;

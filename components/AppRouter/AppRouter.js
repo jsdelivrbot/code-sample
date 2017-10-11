@@ -25,7 +25,7 @@ function onRouteUpdate () {
 
 const AppRouter = function ({ store }) {
   const syncedHistory = syncHistoryWithStore(getHistory(), store)
-  const home = <div>Home</div>
+  const home = function () { return <div>Home</div> }
 
   return (
     <Provider store={store}>
