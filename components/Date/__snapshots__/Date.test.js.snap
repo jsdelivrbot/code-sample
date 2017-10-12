@@ -12,7 +12,7 @@ exports[`Test DateE should be able to render the component 1`] = `
   <span
     className="Date"
   >
-    12/31/1969
+    4:00 PM
   </span>
   <h1
     className="exampleHeader"
@@ -22,7 +22,7 @@ exports[`Test DateE should be able to render the component 1`] = `
   <span
     className="Date"
   >
-    03/09/2017
+    4:00 PM
   </span>
 </div>
 `;
