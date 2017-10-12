@@ -18,19 +18,21 @@ const ReadEmails = ({
         <NoItems />
       }
 
-      <TransitionGroup component='ul'>
-        {
-          emailIds.map((id, i) => {
-            return (
-              <ReadEmailCardTransitionC key={id} id={id}>
-                <li>
-                  <ReadEmailCardC id={id} />
-                </li>
-              </ReadEmailCardTransitionC>
-            )
-          })
-        }
-      </TransitionGroup>
+      { !showNoItems &&
+        <TransitionGroup component='ul'>
+          {
+            emailIds.map((id, i) => {
+              return (
+                <ReadEmailCardTransitionC key={id} id={id}>
+                  <li>
+                    <ReadEmailCardC id={id} />
+                  </li>
+                </ReadEmailCardTransitionC>
+              )
+            })
+          }
+        </TransitionGroup>
+      }
     </div>
   )
 }

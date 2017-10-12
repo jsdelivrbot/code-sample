@@ -18,21 +18,23 @@ const UnreadEmails = ({
         <NoItems />
       }
 
-      <TransitionGroup component='ul'>
-        {
-          emailIds.map((id, i) => {
-            return (
-              <UnreadEmailCardTransitionC key={id} id={id}>
-                <li>
-                  <div className='transitionSpacingHack' />
+      { !showNoItems &&
+        <TransitionGroup component='ul'>
+          {
+            emailIds.map((id, i) => {
+              return (
+                <UnreadEmailCardTransitionC key={id} id={id}>
+                  <li>
+                    <div className='transitionSpacingHack' />
 
-                  <UnreadEmailCardC id={id} />
-                </li>
-              </UnreadEmailCardTransitionC>
-            )
-          })
-        }
-      </TransitionGroup>
+                    <UnreadEmailCardC id={id} />
+                  </li>
+                </UnreadEmailCardTransitionC>
+              )
+            })
+          }
+        </TransitionGroup>
+      }
     </div>
   )
 }
