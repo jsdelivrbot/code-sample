@@ -7,23 +7,28 @@
   padding: 15px 10px;
   align-items: center;
 
+  .from {
+    color: $text-color-light;
+  }
+
   .subject {
     font-weight: $bolder;
   }
 
   button.action {
     padding: 8px 10px;
+    width: 60px;
   }
 
   .date {
     margin-left: 10px;
     color: $primary-color-light;
     white-space: nowrap;
-    flex-grow: 1;
   }
 
   > main {
     margin-left: 20px;
+    flex-grow: 1;
 
     .body {
       margin-top: 10px;

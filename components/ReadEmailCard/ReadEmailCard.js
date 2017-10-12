@@ -1,6 +1,6 @@
 import './ReadEmailCardS.scss'
 import React from 'react'
-import { object, bool } from 'prop-types'
+import { object, bool, func } from 'prop-types'
 import getMany from 'utilities/get/getMany'
 import Loader from 'components/Loader/Loader'
 import Date from 'components/Date/Date'
@@ -8,6 +8,7 @@ import Date from 'components/Date/Date'
 const ReadEmailCard = ({
   email = {},
   showLoader = false,
+  onClick = () => {},
 }) => {
   const [
     id,
@@ -34,7 +35,7 @@ const ReadEmailCard = ({
       }
 
       <div className='actions'>
-        <button type='button' className='action'>Mark Read</button>
+        <button type='button' className='action' onClick={onClick}>Mark Read</button>
       </div>
 
       <main>
@@ -57,6 +58,7 @@ const ReadEmailCard = ({
 ReadEmailCard.propTypes = {
   email: object,
   showLoader: bool,
+  onClick: func,
 }
 
 export default ReadEmailCard

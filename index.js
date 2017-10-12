@@ -3,6 +3,7 @@ import AppRouter from 'components/AppRouter/AppRouter'
 import configureStore from 'stateLayer/configureStore'
 import { ENV } from 'configs'
 import { LOCALDEV } from 'constants/envConstants'
+import './mocks.js'
 
 const initialState = {}
 

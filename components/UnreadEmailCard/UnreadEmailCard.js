@@ -1,6 +1,6 @@
 import './UnreadEmailCardS.scss'
 import React from 'react'
-import { object, bool } from 'prop-types'
+import { object, bool, func } from 'prop-types'
 import getMany from 'utilities/get/getMany'
 import Loader from 'components/Loader/Loader'
 import Date from 'components/Date/Date'
@@ -8,6 +8,7 @@ import Date from 'components/Date/Date'
 const UnreadEmailCard = ({
   email = {},
   showLoader = false,
+  onClick = () => {},
 }) => {
   const [
     id,
@@ -50,7 +51,7 @@ const UnreadEmailCard = ({
       </main>
 
       <footer>
-        <button type='button' className='action'>Mark As Read</button>
+        <button type='button' className='action' onClick={onClick}>Mark As Read</button>
       </footer>
     </div>
   )
@@ -59,6 +60,7 @@ const UnreadEmailCard = ({
 UnreadEmailCard.propTypes = {
   email: object,
   showLoader: bool,
+  onClick: func,
 }
 
 export default UnreadEmailCard

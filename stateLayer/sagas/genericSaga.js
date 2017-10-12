@@ -7,7 +7,7 @@ const propTypes = {
   successAction: string.isRequired,
   failureAction: string.isRequired,
   api: func.isRequired,
-  resourceKey: string.isRequired,
+  resourceKey: string,
 }
 
 const genericSaga = function ({
@@ -24,7 +24,7 @@ const genericSaga = function ({
       yield put({ type: requestAction, values })
 
       const { data } = yield api({ ...values })
-      const resources = data[resourceKey]
+      const resources = data[resourceKey || 'resource']
 
       const success = {
         type: successAction,

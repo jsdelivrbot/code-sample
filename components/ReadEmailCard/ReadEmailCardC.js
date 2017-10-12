@@ -3,6 +3,7 @@ import React, { createClass } from 'react'
 import { object, bool } from 'prop-types'
 import ReadEmailCard from './ReadEmailCard'
 import getMany from 'utilities/get/getMany'
+import wrapPutEmail from 'utilities/wrap/wrapPutEmail'
 
 export function mapStateToProps (state, { id }) {
   const [
@@ -31,10 +32,24 @@ const propTypes = {
 const container = {
   propTypes,
 
-  render () {
-    const { props } = this
+  onClick () {
+    const [
+      id,
+      dispatch,
+    ] = getMany(this, [
+      'props.email.id',
+      'props.dispatch',
+    ])
 
-    return <ReadEmailCard {...props} />
+    const wrappedPutEmail = wrapPutEmail({ id, unread: true })
+
+    dispatch(wrappedPutEmail)
+  },
+
+  render () {
+    const { props, onClick } = this
+
+    return <ReadEmailCard {...props} onClick={onClick} />
   },
 }
 

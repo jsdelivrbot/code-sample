@@ -1,10 +1,20 @@
 # code-sample
+A codebase to show my web application development style.
 
-## Production
+## Production Url
 https://code-sample.netlify.com/
 
-## How to develop
+## Deploying
+CD is setup with netlify, simply push to master to trigger the deploy.
+
+## Mocking
+Currently all PUT methods are mocked using a sinon fake server.  Please see mocks.js.
+
+## Testing
+- Snapshot testing with  https://facebook.github.io/jest/
+- You can also run test server which uses mocha and chair.  Please see command in package.json
+
+## Getting started
 1) Clone repo
 2) yarn/npm install
-3) look at package.json for commands to run
-4) Push to master, CD will be triggered on netlify.com
+3) run a local server (Please see command in package.json)

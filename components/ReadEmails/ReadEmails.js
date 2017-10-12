@@ -12,7 +12,7 @@ const ReadEmails = ({
 }) => {
   return (
     <div className='ReadEmails'>
-      <header>Unread Emails</header>
+      <header>Read Emails</header>
 
       { showNoItems &&
         <NoItems />

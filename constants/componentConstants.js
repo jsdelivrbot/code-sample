@@ -1,5 +1,5 @@
 export const SERVER_DATE_FORMAT = 'YYYY-MM-DD'
-export const DISPLAY_DATE = 'h:mm a'
+export const DISPLAY_DATE = 'h:mm A'
 export const DISPLAY_DATE_SHORT = 'MM/DD'
 export const BLANK_PLACE_HOLDER = '--'
 export const PAGE_SIZE = 20
