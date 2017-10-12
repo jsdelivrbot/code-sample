@@ -1,21 +1,21 @@
-.Fade {
+.HeightTransition {
 }
 
-.Fade-enter {
+.HeightTransition-enter {
   // opacity: 0.01;
 }
 
-.Fade-enter.Fade-enter-active {
+.HeightTransition-enter.HeightTransition-enter-active {
   // opacity: 1;
   // transition: opacity 500ms ease-in;
 }
 
-.Fade-exit {
+.HeightTransition-exit {
   opacity: 1;
   max-height: 2000px;
 }
 
-.Fade-exit.Fade-exit-active {
+.HeightTransition-exit.HeightTransition-exit-active {
   opacity: 0.01;
   max-height: 0px;
   transition: opacity 300ms ease-in, max-height 300ms cubic-bezier(0, 1, 0, 1);

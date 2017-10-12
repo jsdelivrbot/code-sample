@@ -1,9 +1,9 @@
 import React from 'react'
-import Fade from 'components/Fade/Fade'
+import WidthTransition from 'components/WidthTransition/WidthTransition'
 
 const UnreadEmailCardTransition = (props) => {
   return (
-    <Fade
+    <WidthTransition
       {...props}
     />
   )

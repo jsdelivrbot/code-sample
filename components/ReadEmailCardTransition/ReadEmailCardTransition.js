@@ -1,9 +1,9 @@
 import React from 'react'
-import Fade from 'components/Fade/Fade'
+import HeightTransition from 'components/HeightTransition/HeightTransition'
 
 const ReadEmailCardTransition = (props) => {
   return (
-    <Fade
+    <HeightTransition
       {...props}
     />
   )
