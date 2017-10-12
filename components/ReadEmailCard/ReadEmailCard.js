@@ -33,25 +33,23 @@ const ReadEmailCard = ({
         <Loader small />
       }
 
-      <header>
+      <div className='actions'>
+        <button type='button' className='action'>Mark Read</button>
+      </div>
+
+      <main>
         <div className='subjectFrom'>
           <p className='subject'>{subject}</p>
 
           <p className='from'>{from}</p>
         </div>
 
-        <div className='date'>
-          <Date>{date}</Date>
-        </div>
-      </header>
-
-      <main>
         <p className='body'>{body}</p>
       </main>
 
-      <footer>
-        <button type='button' className='action'>Mark As Read</button>
-      </footer>
+      <div className='date'>
+        <Date>{date}</Date>
+      </div>
     </div>
   )
 }

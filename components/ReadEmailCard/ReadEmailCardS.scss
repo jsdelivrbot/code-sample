@@ -2,29 +2,31 @@
 
 .ReadEmailCard {
   position: relative;
+  display: flex;
   background-color: $white;
   padding: 15px 10px;
+  align-items: center;
 
-  > header {
-    display: flex;
-    justify-content: space-between;
+  .subject {
+    font-weight: $bolder;
+  }
 
-    .subject {
-      font-weight: $bolder;
-    }
+  button.action {
+    padding: 8px 10px;
+  }
 
-    .date {
-      margin-top: 10px;
-      color: $primary-color-light;
-    }
+  .date {
+    margin-left: 10px;
+    color: $primary-color-light;
+    white-space: nowrap;
+    flex-grow: 1;
   }
 
   > main {
-    margin-top: 10px;
-    border-top: 1px solid $grey;
-    padding-top: 10px;
+    margin-left: 20px;
 
     .body {
+      margin-top: 10px;
       $font-size: 14px;
       $line-height: 1.4;
       $lines-to-show: 2;
@@ -39,13 +41,6 @@
       overflow: hidden;
       text-overflow: ellipsis;
     }
-  }
-
-  > footer {
-    margin-top: 10px;
-    border-top: 1px solid $grey;
-    padding-top: 10px;
-    text-align: center;
   }
 
   .subject {

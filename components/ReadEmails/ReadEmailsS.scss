@@ -10,14 +10,10 @@
   }
 
   > ul {
-    overflow: scroll;
     background-color: $grey-dark;
-    display: flex;
-    padding: 20px 0px;
 
     > li {
-      display: flex;
-      align-items: start;
+      border-top: 1px solid $grey;
     }
   }
 
