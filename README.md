@@ -12,9 +12,9 @@ Currently all PUT methods are mocked using a sinon fake server.  Please see mock
 
 ## Testing
 - Snapshot testing with  https://facebook.github.io/jest/
-- You can also run test server which uses mocha and chair.  Please see command in package.json
+- You can also run test server which uses mocha and chai.  Please see commands in package.json
 
 ## Getting started
 1) Clone repo
 2) yarn/npm install
-3) run a local server (Please see command in package.json)
+3) run a local server (Please see commands in package.json)
