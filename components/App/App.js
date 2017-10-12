@@ -13,7 +13,7 @@ const App = ({
 }) => {
   return (
     <div className='App'>
-      <header>--</header>
+      <header>Twine Mail</header>
 
       { showLoader &&
         <Loader />
